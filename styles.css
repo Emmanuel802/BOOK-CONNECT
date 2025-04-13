@@ -60,5 +60,9 @@ body {
 }
 
 
-
+.book-card .book-date {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+    margin: 10px 0;
+}
 
