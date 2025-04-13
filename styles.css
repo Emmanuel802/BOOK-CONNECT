@@ -40,7 +40,10 @@ body {
     border-bottom: 1px solid #ddd;
 }
 
-    
-
+.book-card .book-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 5px 0;
+}
 
 
