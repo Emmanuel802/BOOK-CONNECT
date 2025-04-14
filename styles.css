@@ -90,6 +90,41 @@ body {
     cursor: pointer;
 }
 
+.notice {
+  position: fixed;
+  top: 400px;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  width: 200px;
+  height: 50px;
+  background-image: linear-gradient(45deg,  #445e80f6 0%, #2a4b77f5 100%);
+  
+  color: #fff;
+  border-radius: 10px;
+  z-index: 5;
+  animation: notice-animation 1.5s;
+  animation-iteration-count: 1;
+}
+
+@keyframes notice-animation {
+  from {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(-45deg);
+    width: 300px;
+    height: 100px;
+    font-size: 25px;
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 
 .book-grid {
     display: grid;
