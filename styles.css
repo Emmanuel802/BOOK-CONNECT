@@ -13,7 +13,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 5rem;
+  height: 7rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -67,7 +67,7 @@ body {
   }
   
   .search-container input[type="text"] {
-    padding: 0.4rem 0;
+    padding: 0.4rem 0.3rem;
     padding-right: 7rem;
     border-radius: 5px;
     border: none;
@@ -134,7 +134,7 @@ body {
   padding: 15px;
   width: 200px;
   height: 50px;
-  background-image: linear-gradient(45deg,  #445e80f6 0%, #2a4b77f5 100%);
+  background: #000000e1;
   color: #fff;
   border-radius: 10px;
   cursor: pointer;
@@ -274,7 +274,7 @@ body {
  padding: 10px 50px;
  border-radius: 4px;
  cursor: pointer;
- transition: transform 0.3s ease;
+ transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
 }
 
 .view-more-btn:hover {
