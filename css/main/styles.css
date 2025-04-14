@@ -72,8 +72,13 @@ body {
     border-radius: 5px;
     border: none;
     font-size: 0.9rem;
+    background: #000000;
   }
   
+input::placeholder {
+  color: #e0e0e0;
+}
+
   .search-container button {
     padding: 0.4rem 0.6rem;
     border: none;
