@@ -1,12 +1,14 @@
+@import '../base/variable.css';
+
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     padding-top: 5rem;
-    background-image: linear-gradient(45deg, #3b1a06 0%, #501f10 100%);
+  background-image: linear-gradient(45deg, var(--background-gradient-start) 0%, var(--background-gradient-end) 100%);
     color: #333;
 }
-
 
 .navbar {
   position: fixed;
@@ -19,8 +21,8 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #000000;
-  color: white;
+  background-color: var(--navbar-bg);
+  color: var(--navbar-link-color);
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   z-index: 999;
   box-sizing: border-box;
@@ -52,8 +54,8 @@ body {
   }
   
   .nav-links a:hover {
-    color: #1f2937;
-    background-color: #ffffff;
+  color: var(--navbar-hover-color);
+  background-color: var(--navbar-hover-bg);
   }
   
  
@@ -66,22 +68,23 @@ body {
   }
   
   .search-container input[type="text"] {
-    padding: 0.4rem 0.3rem;
-    padding-right: 7rem;
+  color: var(--search-color);
+  background: var(--search-bg);
+  padding: 0.4rem 0.5rem;
+  padding-right: 15rem;
     border-radius: 5px;
     border: none;
     font-size: 0.9rem;
-    background: #000000;
   }
   
 input::placeholder {
-  color: #e0e0e0;
+  color: var(--search-placeholder);
 }
 
   .search-container button {
     padding: 0.4rem 0.6rem;
     border: none;
-    background-color: #752f00;
+  background-color: var(--search-button-bg);
     color: white;
     border-radius: 5px;
     cursor: pointer;
@@ -89,7 +92,7 @@ input::placeholder {
   }
   
   .search-container button:hover {
-    background-color: #000000;
+  background-color: var(--search-button-hover);
   }
   
   .search-btn {
@@ -138,8 +141,8 @@ input::placeholder {
   padding: 15px;
   width: 200px;
   height: 50px;
-  background: #000000e1;
-  color: #fff;
+  background: var(--notice-bg);
+  color: var(--notice-color);
   border-radius: 10px;
   cursor: pointer;
   z-index: 5;
@@ -172,14 +175,14 @@ input::placeholder {
     padding: 20px;
     max-width: 1200px;
     margin: 0 auto;
-    background: #f0f8ff;
+  background: var(--book-grid-bg);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 }
 
 .book-card {
-    background-color: #fff;
-    border: 1px solid #ddd;
+  background-color: var(--book-card-bg);
+  border: 1px solid var(--book-card-border);
     border-radius: 8px;
     overflow: hidden;
     text-align: center;
@@ -212,7 +215,7 @@ input::placeholder {
   position: absolute;
   top: 30px;
   left: 0;
-  background-color: #ff2c3e;
+  background-color: var(--new-tag-bg);
   color: white;
   padding: 10px 25px;
   font-size: 0.8rem;
@@ -227,40 +230,44 @@ input::placeholder {
   position: absolute;
   top: 30px;
   left: 0;
-  background-color: rgb(25, 86, 255);
+  background-color: var(--out-of-stock-bg);
   color: white;
   padding: 10px 25px;
   font-size: 0.8rem;
   font-weight: bold;
   border-radius: 2px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.26);
 }
 
 
 
-.book-card .book-title {
+.book-card 
+.book-title {
     font-size: 1.1rem;
     font-weight: bold;
     margin: 5px 0;
 }
 
-.book-card .book-author {
+.book-card 
+.book-author {
     font-size: 1rem;
     font-weight: bold;
-    color: #8e44ad;
+  color: var(--book-author-color);
     margin: 10px 0;
 }    
 
-.book-card .book-info {
+.book-card 
+.book-info {
     font-size: 0.9rem;
-    color: #7f8c8d;
+  color: var(--book-info-color);
     margin: 10px 0;
 }
 
 
-.book-card .book-date {
+.book-card 
+.book-date {
     font-size: 0.9rem;
-    color: #7f8c8d;
+  color: var(--book-info-color);
     margin: 10px 0;
 }
 
@@ -272,9 +279,9 @@ input::placeholder {
 }
 
 .view-more-btn {
- color: #fff;
+  color: var(--view-more-color);
+  background-color: var(--view-more-bg);
  font-weight: 600;
- background-color: #000000;
  padding: 10px 50px;
  border-radius: 4px;
  cursor: pointer;
@@ -282,7 +289,7 @@ input::placeholder {
 }
 
 .view-more-btn:hover {
-  color: #000000;
-  background-color: #fff;
+  color: var(--view-more-hover-color);
+  background-color: var(--view-more-hover-bg);
   transform: scale(1.07);
 }

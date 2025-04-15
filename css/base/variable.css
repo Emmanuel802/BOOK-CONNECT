@@ -1,2 +1,28 @@
-
+:root {
+  /* Colors */
+  --background-gradient-start: #3b1a06;
+  --background-gradient-end: #501f10;
+  --navbar-bg: #000000;
+  --navbar-link-color: #ffffff;
+  --navbar-hover-bg: #ffffff;
+  --navbar-hover-color: #1f2937;
+  --search-bg: #000000;
+  --search-color: #ffffff;
+  --search-placeholder: #e0e0e0;
+  --search-button-bg: #752f00;
+  --search-button-hover: #000000;
+  --book-grid-bg: #682409;
+  --book-card-bg: #ffffff;
+  --book-card-border: #dddddd;
+  --book-author-color: #8e44ad;
+  --book-info-color: #7f8c8d;
+  --notice-bg: #000000e1;
+  --notice-color: #ffffff;
+  --new-tag-bg: #ff2c3e;
+  --out-of-stock-bg: rgb(25, 86, 255);
+  --view-more-bg: #000000;
+  --view-more-color: #ffffff;
+  --view-more-hover-bg: #ffffff;
+  --view-more-hover-color: #000000;
+}
 
