@@ -208,6 +208,17 @@ input::placeholder {
   position: relative;
 }
 
+.image-container-6::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 10px 25px;
+  background-color: #000000d0;
+}
+
 /* I'm new for 2 and 7 */
 .image-container-2::after,
 .image-container-7::after {
