@@ -1,7 +1,6 @@
 :root {
   /* Colors */
-  --background-gradient-start: #3b1a06;
-  --background-gradient-end: #501f10;
+  --background-gradient: #501f10;
   --navbar-bg: #000000;
   --navbar-link-color: #ffffff;
   --navbar-hover-bg: #ffffff;
@@ -12,10 +11,10 @@
   --search-button-bg: #752f00;
   --search-button-hover: #000000;
   --book-grid-bg: #682409;
-  --book-card-bg: #ffffff;
-  --book-card-border: #dddddd;
+  --book-card-bg: #000000;
+  --book-card-border: #8a381f;
   --book-author-color: #8e44ad;
-  --book-info-color: #7f8c8d;
+  --book-info-color: #cecece;
   --notice-bg: #000000e1;
   --notice-color: #ffffff;
   --new-tag-bg: #ff2c3e;
