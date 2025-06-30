@@ -6,13 +6,11 @@
 @import url("../components/button.css");
 @import url("../components/notice.css");
 
-
-
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   padding-top: 7rem;
-  background: var( --background-gradient);
+  background: var(--background-gradient);
   color: #333;
 }
