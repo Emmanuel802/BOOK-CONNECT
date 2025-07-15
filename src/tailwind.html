@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -12,38 +12,93 @@
   </head>
   <body class="m-0 p-0 pt-[7rem] font-sans text-[#333] bg-[#501f10]">
     <!-- Navigation Bar -->
-    <nav class="navbar">
+    <nav
+      class="navbar fixed top-0 left-0 w-full h-[7rem] flex flex-wrap justify-between content-center px-[2rem] py-[1rem] bg-[#000] text-[#fff] shadow-[0_2px_6px_rgba(0,0,0,0.1)] z-[999] box-border gap-[1rem]"
+    >
       <!-- Navigation Logo-->
-      <div class="logo">📚 Book Connect</div>
+      <div class="logo font-[cursive] text-[2rem] font-bold">
+        📚 Book Connect
+      </div>
       <!-- Navigation links-->
-      <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Browse</a></li>
-        <li><a href="#">Genres</a></li>
-        <li><a href="#">My Library</a></li>
+      <ul class="nav-links list-none flex gap-[2rem] m-0 p-0">
+        <!-- 1st link -->
+        <li>
+          <a
+            href="#"
+            class="text-white text-[1rem] font-bold px-[20px] py-[10px] hover:text-[#1f2937] hover:bg-[#fff] transition-colors duration-300 ease-in-out"
+          >
+            Home
+          </a>
+        </li>
+
+        <!-- 2nd link -->
+        <li>
+          <a
+            href="#"
+            class="text-white text-[1rem] font-bold px-[20px] py-[10px] hover:text-[#1f2937] hover:bg-[#fff] transition-colors duration-300 ease-in-out"
+          >
+            Browse
+          </a>
+        </li>
+
+        <!-- 3rd link -->
+        <li>
+          <a
+            href="#"
+            class="text-white text-[1rem] font-bold px-[20px] py-[10px] hover:text-[#1f2937] hover:bg-[#fff] transition-colors duration-300 ease-in-out"
+          >
+            Genres
+          </a>
+        </li>
+
+        <!-- 4th link -->
+        <li>
+          <a
+            href="#"
+            class="text-white text-[1rem] font-bold px-[20px] py-[10px] hover:text-[#1f2937] hover:bg-[#fff] transition-colors duration-300 ease-in-out"
+          >
+            My Library
+          </a>
+        </li>
       </ul>
     </nav>
 
     <!-- Banner images -->
     <div class="banner">
-      <div class="background-image-1">
+      <!-- 1st image -->
+      <div
+        class="background-image-1 absolute h-[350px] w-full transition-[clip-path_1s_ease] duration-1000 ease-in-out clip-path-[inset(0_0_0_0)] hover:clip-path-[inset(0_0_100%_0)] will-change-[clip-path]"
+      >
         <img
           src="Assets/images/pexels-rafael-cosquiere-1059286-2041540.png"
-          alt="Book Connect Background Image-2"
+          alt="Book Connect Background Image-1"
+          class="h-[350px] w-full object-cover bg-center bg-no-repeat"
         />
       </div>
 
-      <div class="background-image-2">
+      <!-- 2nd image-->
+      <div class="background-image-2 h-[350px] w-full">
         <img
           src="Assets/images/pexels-juanpphotoandvideo-877971.png"
-          alt="Book Connect Background Image-1"
+          alt="Book Connect Background Image-2"
+          class="h-[350px] w-full object-cover bg-center bg-no-repeat"
         />
       </div>
     </div>
     <!-- Search container -->
-    <div class="search-container">
-      <input type="text" placeholder="Search books..." />
-      <button class="search-btn" type="submit" aria-label="Search">
+    <div
+      class="sticky top-[7rem] z-[998] flex w-full items-center justify-center gap-2 bg-[#501f10] h-16"
+    >
+      <input
+        type="text"
+        placeholder="Search books..."
+        class="rounded-[5px] border-none bg-black px-2 py-[0.4rem] pr-[15rem] text-[0.9rem] text-white"
+      />
+      <button
+        type="submit"
+        aria-label="Search"
+        class="cursor-pointer rounded-[5px] border-none bg-[#752f00] px-3 py-[0.4rem] text-white transition-colors duration-200 ease-in-out hover:bg-black"
+      >
         <i class="fa-solid fa-magnifying-glass"></i>
       </button>
     </div>
