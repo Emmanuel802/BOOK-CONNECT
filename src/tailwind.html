@@ -115,18 +115,31 @@
         class="book-grid grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-5 p-5 max-w-[1200px] my-0 mx-auto bg-[#682409] shadow-[0_4px_8px_rgba(0,0,0,0.1)] rounded-[8px]"
       >
         <!-- Book Card 1 -->
-        <div class="book-card">
+        <div
+          class="book-card bg-black border border-[#8a381f] rounded-[8px] overflow-hidden text-center shadow-[0_4px_8px_rgba(0,0,0,0.1)] p-4 transition-transform duration-200 hover:-translate-y-[5px] hover:shadow-[0_4px_8px_rgba(0,0,0,0.2)]"
+        >
           <div class="image-container-1">
             <img
               src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1348495562i/42891.jpg"
               alt="Journeys in English"
+              class="w-full h-[300px] object-cover border-b-[1px_solid_#ddd]"
             />
           </div>
 
-          <div class="book-title">Journeys in English</div>
-          <div class="book-author">By: Bill Bryson</div>
-          <div class="book-info">Popularity: 98</div>
-          <div class="book-date">Published: December 31, 1996</div>
+          <div class="book-title text-[1.1rem] font-bold text-white my-[5px]">
+            Journeys in English
+          </div>
+          <div
+            class="book-author text-[1rem] font-bold text-[#8e44ad] my-[10px]"
+          >
+            By: Bill Bryson
+          </div>
+          <div class="book-info text-[0.9rem] text-[#cecece] my-[10px]">
+            Popularity: 98
+          </div>
+          <div class="book-date text-[0.9rem] text-[#cecece] my-[10px]">
+            Published: December 31, 1996
+          </div>
         </div>
 
         <!-- Book Card 2 -->
