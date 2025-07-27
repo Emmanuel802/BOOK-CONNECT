@@ -58,7 +58,10 @@ input::placeholder {
   padding: 10px 50px;
   border-radius: 4px;
   cursor: pointer;
-  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease,
+    color 0.3s ease;
 }
 
 .view-more-btn:hover {
